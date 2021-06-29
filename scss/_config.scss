@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$font-family-primary: 'Kumbh Sans', sans-serif;
+$text-color-active: hsl(238, 29%, 16%);
+$text-color-primary: hsl(237, 12%, 33%);
+$text-color-secondary: hsl(240, 6%, 50%);
+$background-color-primary: hsl(273, 75%, 66%);
+$background-color-secondary: hsl(240, 73%, 65%);
+$text-color-hover: hsl(14, 88%, 65%);
+$divider-color: hsl(240, 5%, 91%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

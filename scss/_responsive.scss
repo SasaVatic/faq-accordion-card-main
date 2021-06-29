@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    position: relative;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+  }
+  .card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+    .img-box {
+      width: 130%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      .illustration-woman {
+        img {
+          width: 100%;
+          margin-bottom: 0;
+          margin-left: -22%;
+        }
+      }
+      .background-pattern {
+        img {
+          width: 170%;
+          left: -86%;
+          top: 50%;
+          transform: translateY(-57%);
+        }
+      }
+    }
+    .illustration-box {
+      img {
+        position: absolute;
+        width: 20%;
+        left: -9.7%;
+        top: 40%;
+        z-index: 3;
+      }
+    }
+
+    .card-content {
+      padding: 2rem 5rem 5rem 0;
+      background: transparent;
+
+      .content-heading {
+        h2 {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

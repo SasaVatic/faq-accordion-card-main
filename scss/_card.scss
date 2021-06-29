@@ -1,0 +1,91 @@
+.card {
+  width: 100%;
+  max-width: 850px;
+
+  .img-box {
+    width: 100%;
+    position: relative;
+
+    .illustration-woman {
+      img {
+        position: relative;
+        width: 80%;
+        margin-bottom: -32%;
+        transform: translateX(6%);
+        z-index: 2;
+      }
+    }
+    .background-pattern {
+      img {
+        position: absolute;
+        width: 72%;
+        left: 50%;
+        transform: translateX(-51%);
+        bottom: -125%;
+        z-index: 1;
+      }
+    }
+  }
+
+  .card-content {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 32% 2rem 3rem 2rem;
+
+    .content-heading {
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+    }
+
+    .content-box {
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid $divider-color;
+
+      .faq-question {
+        cursor: pointer;
+        color: $text-color-primary;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+
+        &:hover {
+          color: $text-color-hover;
+        }
+
+        &.active {
+          color: $text-color-active;
+          font-weight: 700;
+        }
+
+        .question-arrow {
+          padding-right: 5px;
+          img {
+            transition: transform 300ms ease-in;
+          }
+        }
+
+        .question-arrow.active {
+          img {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      .faq-answer {
+        visibility: hidden;
+        height: 0;
+        color: $text-color-secondary;
+        transition: visibility, height, padding-top 300ms ease-in;
+
+        &.active {
+          visibility: visible;
+          height: auto;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import 'config';
+@import 'card';
+@import 'responsive';
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: $font-family-primary;
+  background: linear-gradient(
+    to bottom,
+    $background-color-primary,
+    $background-color-secondary
+  );
+}
+
+main {
+  width: 100%;
+  padding: 3rem 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.attribution {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $text-color-hover;
+
+    &:hover {
+      color: hsl(191, 97, 70);
+    }
+  }
+}
